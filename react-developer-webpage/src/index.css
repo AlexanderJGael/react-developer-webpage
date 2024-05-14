@@ -3,24 +3,42 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+/*   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --bs-blue: #2e0f38;
+  --bs-indigo: #1a2c54;
+  --bs-purple: #8351a8;
+  --bs-cyan: #4d7b93;
+  --bs-pink: #b45dbb;
+
+  --bs-body-bg: #242424;
+  --bs-body-color: #ffffff;
+
+  --bs-primary: var(--bs-blue);
+  --bs-secondary: var(--bs-indigo);
+  --bs-success: var(--bs-purple);
+  --bs-info: var(--bs-cyan);
+  --bs-warning: var(--bs-pink);
+  --bs-danger: var(--bs-pink);
+  --bs-light: #ffffff;
+  --bs-dark: #000000;
+  --bs-white: #ffffff;
 }
 
+
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: var(--bs-primary);
 }
 a:hover {
-  color: #535bf2;
+  color: var(--bs-info);
 }
 
 body {
@@ -29,11 +47,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--bs-primary);
 }
 
 button {
@@ -43,27 +64,30 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--bs-blue);
+  color: var(--bs-white);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--bs-info);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: var(--bs-pink);
+  color: var(--bs-body-color);
+}
+
+Link {
+  color: var(--bs-light);
 }
