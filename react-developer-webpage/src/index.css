@@ -46,9 +46,25 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--bs-light);
+  height: 100vh;
+  /* background gradiant code from: https://codepen.io/P1N2O/pen/pyBNzX */
+  background: linear-gradient(-45deg, var(--bs-warning), var(--bs-danger), var(--bs-info), var(--bs-success));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
   color: var(--bs-body-color);
+}
+
+/* Code from: https://codepen.io/P1N2O/pen/pyBNzX */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 h1 {
@@ -70,6 +86,38 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.border-primary {
+  border-color: var(--bs-pink);
+}
+
+.border-secondary {
+  border-color: var(--bs-blue);
+}
+
+.glow {
+  box-shadow: 0 0 10px var(--bs-primary); /* Change the color to the desired glow color */
+}
+
+.glow-secondary {
+  box-shadow: 0 0 10px var(--bs-secondary); /* Change the color to the desired glow color */
+}
+
+.glow-success {
+  box-shadow: 0 0 10px var(--bs-success); /* Change the color to the desired glow color */
+}
+
+.glow-info {
+  box-shadow: 0 0 10px var(--bs-info); /* Change the color to the desired glow color */
+}
+
+.glow-warning {
+  box-shadow: 0 0 10px var(--bs-warning); /* Change the color to the desired glow color */
+}
+
+.glow-danger {
+  box-shadow: 0 0 10px var(--bs-danger); /* Change the color to the desired glow color */
+}
+
 .btn-primary {
   background-color: var(--bs-pink);
   color: var(--bs-white);
@@ -87,9 +135,28 @@ header {
   right: 0;
   width: 100vw;
   z-index: 1;
-  background-color: var(--bs-pink);
   color: var(--bs-body-color);
 }
+
+#logo {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+    box-shadow: 0 0 10px var(--bs-cyan);
+    transform: scale(1.05);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+}
+
 
 #about-card {
   background-color: var(--bs-indigo);
@@ -104,7 +171,23 @@ form {
   color: var(--bs-body-color);
 }
 
+
 #contactCard {
   background-color: var(--bs-indigo);
   color: var(--bs-white);
+}
+
+#contactButton {
+  transition: color 0.3s ease-in-out, 
+    border-color 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out;
+}
+
+#contactButton:hover {
+  color: var(--bs-pink);
+  border-color: var(--bs-pink);
+  background-color: var(--bs-light);
+  transition: color 0.3s ease-in-out, 
+    border-color 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out;
 }

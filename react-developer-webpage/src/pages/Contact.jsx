@@ -9,7 +9,7 @@ export default function Contact() {
                     <p className="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
                 </div>
                 <div className="col-md-10 mx-auto col-lg-5">
-                    <form className="p-4 p-md-5 shadow rounded-3">
+                    <form className="rounded p-4 p-md-5">
                         <div className="form-floating mb-3">
                             <input type="email" className="form-control bg-light text-dark" id="floatingInput" placeholder="name@example.com"/>
                             <label className="text-dark" htmlFor="floatingInput">Email address</label>
@@ -21,7 +21,7 @@ export default function Contact() {
                         <div className="mb-3">
                             <textarea type="text" className="form-control bg-light text-dark" id="exampleFormControlTextarea1" placeholder="Message..." rows="5"></textarea>
                         </div>
-                        <button className="w-100 btn btn-lg border" type="submit">Send</button>
+                        <button id='contactButton' className="w-100 btn btn-lg border rounded-pill" type="submit">Send</button>
                     </form>
                 </div>
             </div>
