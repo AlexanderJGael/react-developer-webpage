@@ -3,15 +3,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-/*   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87); */
-  background-color: var(--bs-cyan);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 
   --bs-blue: #2e0f38;
   --bs-indigo: #1a2c54;
@@ -41,31 +38,48 @@ a:hover {
   color: var(--bs-info);
 }
 
+html {
+  z-index: 1;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    width: 0;
+  };
+  /* background gradiant code from: https://codepen.io/P1N2O/pen/pyBNzX */
+  background: linear-gradient(-45deg, var(--bs-warning), var(--bs-danger), var(--bs-info), var(--bs-success));
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Code from: https://codepen.io/P1N2O/pen/pyBNzX */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
+  padding-top: 100px;
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   height: 100vh;
-  /* background gradiant code from: https://codepen.io/P1N2O/pen/pyBNzX */
-  background: linear-gradient(-45deg, var(--bs-warning), var(--bs-danger), var(--bs-info), var(--bs-success));
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: transparent;
   color: var(--bs-body-color);
 }
 
-/* Code from: https://codepen.io/P1N2O/pen/pyBNzX */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 h1 {
   font-size: 3.2em;
@@ -129,12 +143,16 @@ button:focus-visible {
 }
 
 header {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
-  z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--bs-body-color);
 }
 
@@ -193,7 +211,8 @@ form {
 }
 
 #portfolioJumbo {
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
 }
 
