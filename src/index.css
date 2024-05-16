@@ -219,3 +219,16 @@ h1 {
   scale: 1.03;
   transition: scale 0.1s ease-in-out;
 }
+
+#projectCard {
+  border: var(--bs-purple) 3px solid;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#projectTitle {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  z-index: -1;
+}
