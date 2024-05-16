@@ -6,13 +6,13 @@ function Navigation() {
   return (
     <ul className="nav nav-pills">
         <li className='nav-item'>
-            <Link className='nav-link text-light' to="/">About Me</Link>
+            <Link className='nav-link text-light' to="/">about me</Link>
         </li>
         <li className='nav-item'>
-            <Link className='nav-link text-light' to="/portfolio">Portfolio</Link>
+            <Link className='nav-link text-light' to="/portfolio">portfolio</Link>
         </li>
         <li className='nav-item'>
-            <Link className='nav-link text-light' to="/contact">Contact Me</Link>
+            <Link className='nav-link text-light' to="/contact">contact me</Link>
         </li>
     </ul>
   )
@@ -20,10 +20,10 @@ function Navigation() {
 
 function Header() {
   return (
-      <header className="d-flex flex-wrap just-content-center py-3 mb-4">
+      <header className="shadow d-flex flex-wrap just-content-center py-3 mb-4">
         <a href="/" id='headerBrand' className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <span><img id='logo' className='mx-2 bi rounded-circle' height='32' src={logo}></img></span>
-          <span className="fs-4 fw-bold text-light">Ally G. Designs</span>
+          <span id='logoText' className="fs-4 fw-bold">ally</span>
         </a>
         <Navigation />
       </header>

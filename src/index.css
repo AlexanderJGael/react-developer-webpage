@@ -152,6 +152,12 @@ header {
   color: var(--bs-body-color);
 }
 
+#logoText {
+  color: transparent;
+  -webkit-text-stroke: 0.5px white;
+  z-index: -1;
+};
+
 .nav-item {
   transition: transform 0.1s ease-in-out;
 }
@@ -229,6 +235,6 @@ h1 {
 
 #projectTitle {
   color: transparent;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.5px white;
   z-index: -1;
 }
