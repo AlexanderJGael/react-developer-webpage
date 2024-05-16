@@ -40,8 +40,7 @@ a:hover {
 
 html {
   z-index: 1;
-  scroll-behavior: smooth;
-  overflow: hidden;
+  overflow: cover;
   ::-webkit-scrollbar {
     width: 0;
   };
@@ -66,19 +65,16 @@ html {
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 32px;
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  height: 100vh;
   background-color: transparent;
   color: var(--bs-body-color);
 }
-
 
 
 h1 {
@@ -156,32 +152,21 @@ header {
   color: var(--bs-body-color);
 }
 
-#logo {
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-#logo:hover {
-    box-shadow: 0 0 10px var(--bs-cyan);
-    transform: scale(1.05);
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
 .nav-item {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .nav-item:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out; 
+  transform: scale(1.03); 
+  transition: transform 0.1s ease-in-out; 
 }
 
 
 #about-card {
-  background-color: var(--bs-pink);
-}
-
-#about-card h1 {
-  color: var(--bs-white);
+  border: var(--bs-purple) 3px solid;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 form {
@@ -191,41 +176,46 @@ form {
 
 
 #contactCard {
-  background-color: var(--bs-indigo);
-  color: var(--bs-white);
+  border: var(--bs-pink) 3px solid;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  color: transparent;
+  font-size: 4em;
+  -webkit-text-stroke: 1px white;
+  z-index: -1;
 }
 
 #contactButton {
-  transition: color 0.3s ease-in-out, 
-    border-color 0.3s ease-in-out, 
-    background-color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out, 
+    border-color 0.1s ease-in-out, 
+    background-color 0.1s ease-in-out;
 }
 
 #contactButton:hover {
   color: var(--bs-pink);
   border-color: var(--bs-pink);
   background-color: var(--bs-light);
-  transition: color 0.3s ease-in-out, 
-    border-color 0.3s ease-in-out, 
-    background-color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out, 
+    border-color 0.1s ease-in-out, 
+    background-color 0.1s ease-in-out;
 }
 
 #portfolioJumbo {
+  border: var(--bs-purple) 3px solid;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-#portfolioJumbo h1 {
-  color: transparent;
-  font-size: 4em;
-  -webkit-text-stroke: 3px white;
-  z-index: -1;
-};
+#buttonsDiv button {
+  transition: scale 0.1s ease-in-out,
+}
 
-#portfolioButtons {
-  transition: color 0.3s ease-in-out, 
-    border-color 0.3s ease-in-out, 
-    background-color 0.3s ease-in-out,
-    font-weight 0.3s ease-in-out;
+#buttonsDiv button:hover {
+  scale: 1.03;
+  transition: scale 0.1s ease-in-out;
 }
