@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import A from '../assets/A.svg'
+import logo from '../assets/logo.svg'
 
 function Navigation() {
   return (
@@ -22,7 +22,7 @@ function Header() {
   return (
       <header className="d-flex flex-wrap just-content-center py-3 mb-4">
         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <a id="logo"  href='/' className='mx-2 bi rounded-circle' overflow='hidden' height='64'><img className='rounded-circle' height='64' src={A}></img></a>
+          <span><img href='/' id='logo' className='mx-2 bi rounded-circle' height='32' src={logo}></img></span>
           <span className="fs-4 fw-bold text-light">Ally G. Designs</span>
         </a>
         <Navigation />
