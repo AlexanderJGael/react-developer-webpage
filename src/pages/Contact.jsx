@@ -11,7 +11,7 @@ export default function Contact() {
                             <p className="col-lg-10 fs-4">Want me to work on your next project? Get in touch with me through the form and let's talk about how I can bring your idea to life!</p>
                         </div>
                         <div className="col-md-10 mx-auto col-lg-5">
-                            <form className="rounded shadow p-4 p-md-5">
+                            <form className="rounded shadow p-lg-4">
                                 <div className="form mb-3">
                                     <input type="email" className="form-control bg-light text-dark" id="floatingInput" placeholder="Email address"/>
                                 </div>
