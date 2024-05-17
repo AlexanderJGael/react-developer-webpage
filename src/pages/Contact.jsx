@@ -4,8 +4,8 @@ export default function Contact() {
     return (
         <section name="contact">
             <div className='container my-5'>
-                <div className='container col-xl-10 col-xxl-8 px-4 py-5'>
-                    <div id='contactCard' className="rounded shadow row align-items-center g-lg-5 py-5">
+                <div className='container py-5 mb-4'>
+                    <div id='contactCard' className="rounded shadow row just align-items-center g-lg-5 px-5 py-5">
                         <div className="col-lg-7 text-center text-lg-start">
                             <h1 id='contactHeader' className="display-4 fw-bold lh-1 mb-3">contact me</h1>
                             <p className="col-lg-10 fs-4">Want me to work on your next project? Get in touch with me through the from and let's talk about how I can bring your idea to life!</p>
