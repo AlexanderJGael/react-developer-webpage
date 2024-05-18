@@ -1,5 +1,8 @@
 # React Developer Webpage
 
+## Deployment
+App is deployed via netlify [here](https://ally-developer-portfolio.netlify.app/)
+
 ## Overview
 
 This is a React project that serves as a personal webpage for a software developer. It is built using React, Bootstrap, and Vite.
