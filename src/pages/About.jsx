@@ -2,8 +2,8 @@ import React from "react"
 
 const About = () => {
     return (
-        <section name="about">
-            <div className="container my-5">
+        <>
+            <div id="about" className="container my-5">
                 <div id="about-card" className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
                     <div className="col-lg-7 p-3 p-lg-5 pt-lg-3">
                         <h1 className="text-start display-4 fw-bold lh-1">ally is a web developer & designer based in kcmo</h1>
@@ -14,7 +14,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </>
     )
 }
 
