@@ -12,7 +12,7 @@ export default function Footer() {
                 <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <img src={allyLogo} className="bi img-fluid  rounded-circle" width="30" height="24" />
                 </a>
-                <span className="mb-3 mb-md-0 text-body-light">© Alex Gael</span>
+                <span className="mb-3 mb-md-0 text-body-light">© ally</span>
                 </div>
 
                 <ul className="nav col-md-4 align-items-center justify-content-end list-unstyled d-flex">
