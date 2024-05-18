@@ -180,6 +180,9 @@ form {
   color: var(--bs-body-color);
 }
 
+.contact {
+  margin-bottom: 100px;
+}
 
 #contactCard {
   border: var(--bs-pink) 3px solid;
