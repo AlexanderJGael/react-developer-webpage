@@ -1,8 +1,29 @@
-# React + Vite
+# React Developer Webpage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React project that serves as a personal webpage for a software developer. It is built using React, Bootstrap, and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+![Image](./public/demo_image.png)
+
+## Features
+
+* A navigation bar with links to About Me, Portfolio, Contact, and Resume sections
+* An About Me section with a photo and bio
+* A Portfolio section with links to six applications and their corresponding GitHub repositories
+* A Contact section with a contact form
+* A Resume section with a link to a downloadable resume
+
+## Technologies Used
+
+* React
+* Bootstrap
+* Vite
+* JavaScript
+* HTML
+* CSS
+
+## License
+
+This project is licensed under the MIT License.
