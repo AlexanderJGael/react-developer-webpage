@@ -10,7 +10,7 @@ const About = () => {
                         <p className="lead text-start">They are passionate about what they do; whether building a new web application, or improving an existing one, Ally will get the job done!</p>
                     </div>
                     <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                        <img className="rounded" src="http://placeholder.com/720x400" alt="" width="720"/>
+                        <img className="rounded" src="https://images.pexels.com/photos/6470599/pexels-photo-6470599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" height="720"/>
                     </div>
                 </div>
             </div>
